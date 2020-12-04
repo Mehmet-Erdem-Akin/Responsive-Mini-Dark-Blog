@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+/* ************************************************ */
+/* ************************************************ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 768px) {
+  #intro h1 {
+    font-size: 3em !important; }
+
+  .form {
+    margin-top: 200px !important; } }
+#sidebar {
+  height: 100%;
+  position: fixed;
+  width: 0px;
+  z-index: 100;
+  top: 0;
+  right: 0px;
+  background-color: #000000;
+  padding-left: -150px !important;
+  overflow: hidden;
+  transition: 1s;
+  -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75); }
+  #sidebar .logo {
+    font-family: "Sansita Swashed", cursive; }
+    #sidebar .logo a {
+      text-decoration: none; }
+      #sidebar .logo a span {
+        font-size: 35px !important;
+        color: #fff;
+        font-weight: bold; }
+  #sidebar .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    color: #ccc !important; }
+  #sidebar ul {
+    text-align: center;
+    height: auto;
+    list-style-type: none;
+    padding: 10px 10px 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    display: block; }
+    #sidebar ul li {
+      padding-top: 30px; }
+      #sidebar ul li a {
+        text-decoration: none;
+        color: #ccc; }
+        #sidebar ul li a:hover {
+          color: #fff; }
+
+header {
+  position: relative !important;
+  height: 100vh;
+  width: 100%; }
+  header .nav {
+    position: absolute;
+    z-index: 10; }
+    header .nav i {
+      color: #fff; }
+      header .nav i:hover {
+        color: #ccc; }
+  header .menuAc {
+    position: absolute;
+    top: 10px;
+    right: 50px; }
+    header .menuAc i {
+      z-index: 99;
+      background-color: #000000;
+      border: 2px solid #161D23;
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 20px !important;
+      background-attachment: fixed !important;
+      position: fixed;
+      cursor: pointer;
+      color: #fff; }
+  header .form-inline .btn {
+    color: #000000;
+    border: 2px solid #000000;
+    background-color: #fff; }
+    header .form-inline .btn:hover {
+      background-color: #000000;
+      color: white; }
+
+#intro {
+  position: relative;
+  z-index: 3;
+  height: 100vh !important;
+  background-size: cover;
+  background: black;
+  background: linear-gradient(180deg, rgba(14, 15, 21, 0.7) 0%, #0e0f15 100%), url("../img/1.jpg");
+  background-size: cover;
+  background-position: center; }
+  #intro h1 {
+    font-size: 5em;
+    color: #fff;
+    font-family: "Sansita Swashed", cursive;
+    text-align: center;
+    font-weight: bold; }
+  #intro p {
+    font-size: 20px;
+    color: #ccc;
+    text-align: center; }
+  #intro .btn {
+    background-color: #008EA1;
+    color: #fff; }
+    #intro .btn:hover {
+      background-color: #000000; }
+  #intro hr {
+    border: 2px solid #fff; }
+
+#post {
+  height: auto;
+  width: 100%;
+  background: linear-gradient(180deg, #0e0f15 0%, #0e0f15 100%);
+  color: #fff; }
+  #post .featured-post {
+    margin: 15px 15px 15px 15px;
+    height: 350px;
+    width: auto;
+    border-radius: 20px;
+    background: black;
+    color: #ccc; }
+    #post .featured-post a i {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #ccc; }
+    #post .featured-post .post-inner {
+      position: absolute;
+      bottom: 15px; }
+      #post .featured-post .post-inner span:nth-child(1) {
+        font-size: 12px; }
+      #post .featured-post .post-inner span:nth-child(2) {
+        font-size: 12px;
+        text-decoration: underline; }
+      #post .featured-post .post-inner h2 a {
+        font-size: 25px;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 0px;
+        font-weight: bold;
+        color: #fff; }
+      #post .featured-post .post-inner p {
+        font-size: 15px; }
+      #post .featured-post .post-inner .writer span {
+        font-family: "Sansita Swashed", cursive !important;
+        font-size: 25px !important; }
+      #post .featured-post .post-inner .writer a:nth-child(1) {
+        height: 30px;
+        width: auto;
+        color: #ccc; }
+      #post .featured-post .post-inner .writer a:nth-child(2) {
+        height: 30px;
+        width: auto;
+        border-radius: 15px;
+        border: 2px solid #ccc;
+        color: #ccc; }
+      #post .featured-post .post-inner .writer a:nth-child(3) {
+        height: 30px;
+        width: auto;
+        border-radius: 15px;
+        border: 2px solid #ccc;
+        color: #ccc; }
+  #post .featured-post:nth-child(1) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/2.jpg");
+    background-size: cover; }
+  #post .featured-post:nth-child(2) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, black 100%), url("../img/3.jpg");
+    background-size: cover; }
+  #post .featured-post:nth-child(3) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/4.jpg");
+    background-size: cover; }
+  #post .featured-post:nth-child(4) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/5.jpg");
+    background-size: cover; }
+  #post .featured-post:nth-child(5) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/6.jpg");
+    background-size: cover; }
+  #post .featured-post:nth-child(6) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url("../img/7.jpg");
+    background-size: cover; }
+
+#load-more {
+  background-color: #0F0E15;
+  border-bottom: 2px solid #000; }
+  #load-more a {
+    width: 250px;
+    height: auto;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%);
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    color: #ccc;
+    text-decoration: none; }
+
+#footer-widgets {
+  background-color: #0F0E15;
+  height: auto; }
+  #footer-widgets .box .baslik {
+    color: #fff;
+    text-align: center;
+    font-weight: bold; }
+  #footer-widgets .box p {
+    text-align: center;
+    color: #fff; }
+  #footer-widgets .box .box-2 .post-inner {
+    height: 100%;
+    position: absolute;
+    bottom: 15px; }
+    #footer-widgets .box .box-2 .post-inner span:nth-child(1) {
+      font-size: 12px; }
+    #footer-widgets .box .box-2 .post-inner span:nth-child(2) {
+      font-size: 12px;
+      text-decoration: underline; }
+    #footer-widgets .box .box-2 .post-inner h2 a {
+      font-family: "Oswald", sans-serif;
+      letter-spacing: 0px;
+      font-weight: 100;
+      color: #fff;
+      font-size: 30px; }
+    #footer-widgets .box .box-2 .post-inner p {
+      font-size: 15px; }
+    #footer-widgets .box .box-2 .post-inner .writer span {
+      font-family: "Sansita Swashed", cursive !important;
+      font-size: 25px !important; }
+    #footer-widgets .box .box-2 .post-inner .writer a:nth-child(1) {
+      height: 30px;
+      width: auto;
+      color: #ccc; }
+    #footer-widgets .box .box-2 .post-inner .writer a:nth-child(2) {
+      height: 30px;
+      width: auto;
+      border-radius: 15px;
+      border: 2px solid #ccc;
+      color: #ccc; }
+    #footer-widgets .box .box-2 .post-inner .writer a:nth-child(3) {
+      height: 30px;
+      width: auto;
+      border-radius: 15px;
+      border: 2px solid #ccc;
+      color: #ccc; }
+  #footer-widgets form input {
+    background-color: #17151E;
+    border: none;
+    width: 250px; }
+  #footer-widgets form button {
+    background-color: #17151E;
+    width: 100px;
+    color: #ccc;
+    border: none;
+    margin-left: 3px; }
+
+main {
+  border-bottom: 2px solid #000; }
+
+footer {
+  background-color: #0F0E15;
+  color: #fff; }
+  footer span a {
+    color: #fff; }
+  footer ul a {
+    margin-left: 5px;
+    color: #fff;
+    background-color: #17151E; }
+
+/*# sourceMappingURL=style.css.map */
